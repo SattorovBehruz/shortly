@@ -91,6 +91,10 @@ img {
 
 .hero-section {
   padding-top: 78px;
+  background-size: 700px 450px;
+  background-image: url("../images/heroimg.svg");
+  background-position: calc(50% + 500px) calc(50% + -25px);
+  background-repeat: no-repeat;
 }
 
 .hero-box {
@@ -145,7 +149,13 @@ img {
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0.15px;
+  border: none;
   border-radius: 10px;
+  outline: none;
+}
+
+.hero-input:focus {
+  outline: 3px solid #f46363;
 }
 
 .hero-form-button {
@@ -162,7 +172,7 @@ img {
 }
 
 .section-statis {
-  padding-block: 200px;
+  padding-block: 200px 290px; 
   background-color: #eff1f7;
 }
 
@@ -191,11 +201,14 @@ img {
 .statis-list {
   display: flex;
   column-gap: 30px;
+  background-image: url("../images/line.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 100px) calc(50% + 100px);
 }
 
 .statis-item {
   position: relative;
-  top: 56px;
+  top: 100px;
   width: 350px;
   padding: 77px 32px 41px;
   border-radius: 5px;
@@ -204,12 +217,12 @@ img {
 
 .statis-item:nth-child(2) {
   position: relative;
-  top: 100px;
+  top: 144px;
 }
 
 .statis-item:nth-child(3) {
   position: relative;
-  top: 144px;
+  top: 188px;
 }
 
 .statis-item::before {
@@ -248,7 +261,6 @@ img {
 }
 
 .section-boost {
-  margin-top: 120px;
   background-image: url("../images/bacgroundimg.svg");
   background-repeat: no-repeat;
   background-size: 100%
